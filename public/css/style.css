@@ -1,0 +1,372 @@
+/* Resets */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--secondary-font: 'Spinnaker', sans-serif; /* nav */
+	--secondary-color: #17a2b8; /* Blue */
+}
+/* General */
+body {
+	font-size: 0.8em;
+}
+main {
+	min-height: 500px;
+}
+/*
+*
+* Notification
+*
+*/
+
+.loading {
+    background: rgba(23, 162, 184, 0.7);
+    padding: 15px;
+    position: fixed;
+    border-radius: 4px;
+    left: 50%;
+    top: 50%;
+    text-align: center;
+    margin: -40px 0 0 -50px;
+    z-index: 2000;
+    display: none;
+    color: #fff;
+}
+/*
+*
+* Navigation
+*
+*/
+
+nav {
+	font-family: var(--secondary-font);
+	font-weight: bold;
+}
+nav .list-group-item {
+	border: none;
+}
+a.nav-link:hover {
+	color: #17a2b8 !important;
+}
+img#mylogo {
+	height: 30px !important;	
+}
+/*
+*
+* Jumbotron
+*
+*/
+
+.jumbotron {
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0.0, 0.0, 0.0, 0.9)), url(/images/business-man-expanding-futuristic-virtual-screen-modern-tablet.jpeg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 80vh;
+	text-align: center;
+}
+.jumbotron-content {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+	height: 80vh;
+}
+h1 {
+	/* border-bottom: 3px solid #fff; */
+	color: #fff !important;
+	text-shadow: 3px 3px 10px #000;
+}
+.jumbotron-content div div {
+	margin: 0 auto;
+}
+section#vectorimages div.row > div.col-sm:first-child {
+	padding: 30px;
+}
+
+/*
+*
+* Browse Categories
+*
+*/
+section#BrowseCategories a:hover {
+	text-decoration: none;
+	color: var(--secondary-color);
+}
+/*
+*
+* Vector images
+*
+*/
+
+section#vectorimages {
+	background-color: #18b5c6;	
+}
+
+/*
+*
+* footer
+*
+*/
+footer {
+	background-color: #7d7d7d;
+}
+footer li {
+	list-style: none;
+}
+footer a {
+	color: #e0e0e0;
+}
+footer a:hover {
+	text-decoration: none;
+	color: #e0e0e0;
+}
+
+div.footer {
+	color: #e0e0e0;
+}
+div.footer div {
+	text-align: center;
+}
+
+/*
+*
+* dashboard
+*
+*/
+.profilepicture,
+.fa-trash-alt:hover,
+.fa-edit:hover,
+.fa-pencil-alt:hover,
+.fa-trash:hover {
+	cursor: pointer;
+}
+
+/*
+*
+* Userdashboard
+*
+*/
+.small span {
+	font-size: 12px!important;
+}
+/*
+*
+* profile.blade.php
+*
+*/
+.select2-container,
+.select2-search__field {
+	width: 100% !important;
+}
+
+div#accordion .card-header:hover {
+	cursor: pointer;
+}
+.fa-user-circle {
+	cursor: pointer;
+}
+
+.profilepicture {
+	width: 128px !important;
+	height: 128px !important;
+}
+
+/*
+*
+* application.blade.php
+*
+*
+*/
+article {
+	overflow: hidden
+}
+.job-pecification {
+	border-left: 1px solid #ccc;
+}
+
+/*
+*
+* shortlist.blade.php
+*
+*/
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+	color: #fff;
+	background-color: var(--secondary-color);
+	border-color:  var(--secondary-color);
+}
+
+.nav-link.active:hover {
+	color: #fff!important;
+}
+.fa-thumbs-up,
+.fa-thumbs-up:hover {
+	color: green;
+	cursor: pointer;
+}
+.fa-thumbs-down,
+.fa-thumbs-down:hover {
+	color: red;
+	cursor: pointer;
+}
+
+.collapse-accordion .card a[data-toggle=collapse] {display: block;padding:.75rem 1.25rem;}
+.collapse-accordion .card-header {padding:0;}
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) and (max-width: 575px) {
+	#updateJobButton,
+	#updateJobButton + span,
+	#updateJobButton + span button {
+		display: block!important;
+		width: 100%!important;
+		margin-bottom: 5px!important;
+	}
+}
+
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 768px) {
+	body {
+		font-size: 0.7em;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px)  {
+	section#vectorimages div.row > div.col-sm:first-child {
+		padding: 4em 4em 0 4em !important;
+	}
+	section#vectorimages {
+		display: grid;
+		grid-template-columns: 1fr 1fr;	
+		padding-left: 5em;
+		padding-right: 5em;
+	}	
+}
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	body p {
+		font-size: 1.2em;
+	}
+}
+/*! CSS Used from: https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/css/font-awesome.min.css?ver=5.5.5 ; media=all */
+@media all{
+	.fa{display:inline-block;font-family:FontAwesome;font-style:normal;font-weight:normal;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+	.fa-angle-right:before{content:"\f105";}
+	}
+	/*! CSS Used from: https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css?ver=6.0.5 ; media=all */
+	@media all{
+	.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+	.fa-angle-right:before{content:"\f105";}
+	}
+	/*! CSS Used from: https://molaprise.com/wp-content/plugins/wp-carousel-free/public/css/font-awesome.min.css?ver=2.1.20 ; media=all */
+	@media all{
+	.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+	.fa-angle-right:before{content:"\f105";}
+	}
+	/*! CSS Used from: https://molaprise.com/wp-content/themes/innvoke/assets/css/bootstrap.min.css?ver=3.3.6 ; media=all */
+	@media all{
+	section{display:block;}
+	a{background-color:transparent;}
+	a:active{outline:0;}
+	a:hover{outline:0;}
+	h1{margin:.67em 0;font-size:2em;}
+	@media print{
+	*,::after,::before{text-shadow:none!important;-webkit-box-shadow:none!important;box-shadow:none!important;}
+	a,a:visited{text-decoration:underline;}
+	}
+	/* *,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit;} */
+	h1{margin-top:0;margin-bottom:.5rem;}
+	a{color:#0275d8;text-decoration:none;}
+	a:focus,a:hover{text-decoration:underline;}
+	a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px;}
+	a{-ms-touch-action:manipulation;touch-action:manipulation;}
+	h1{margin-bottom:.5rem;font-family:inherit;font-weight:500;line-height:1.1;color:inherit;}
+	h1{font-size:2.5rem;}
+	.container{padding-right:.9375rem;padding-left:.9375rem;margin-right:auto;margin-left:auto;}
+	.container::after{display:table;clear:both;content:"";}
+	@media (min-width:544px){
+	.container{max-width:576px;}
+	}
+	@media (min-width:768px){
+	.container{max-width:720px;}
+	}
+	@media (min-width:992px){
+	.container{max-width:940px;}
+	}
+	@media (min-width:1200px){
+	.container{max-width:1140px;}
+	}
+	}
+	/*! CSS Used from: https://molaprise.com/wp-content/themes/innvoke/style.css?ver=5.5.5 ; media=all */
+	@media all{
+	h1{font-family:Cabin;color:#223645;letter-spacing:1px;}
+	h1{font-weight:700;font-size:38px;line-height:40px;}
+	a{-webkit-transition:all .2s;-moz-transition:all .2s;transition:all .2s;}
+	a{color:#223645;}
+	a:hover{color:#36ab9c;}
+	a,a:hover,a:focus{text-decoration:none;}
+	:focus,a:focus{outline:0;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
+	a:hover{color:#36ab9c;}
+	#ins-page-title{background-color:#36ab9c;position:relative;overflow:hidden;text-align:left;display:table;width:100%;height:200px;opacity: 3;-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-position:center center;}
+	#ins-page-title .container{z-index:1;position:relative;}
+	#ins-page-title .ins-page-title-inner{position:absolute;left:0;right:0;top:50%;transform:translateY(-50%);}
+	#ins-page-title.title-align-center{text-align:center;}
+	.ins-page-title-bg{position:absolute;top:0;left:0;right:0;bottom:0;background-size:cover;background-position:center top;opacity:0;-webkit-transition:opacity .4s;transition:opacity .4s;}
+	.ins-breadcrumbs a{color:#515151;-webkit-transition:all .2s;-moz-transition:all .2s;-o-transition:all .2s;transition:all .2s;opacity:.7;margin-right:10px;}
+	.ins-breadcrumbs .fa{margin-right:10px;font-weight:600;font-size:12px;color:inherit;}
+	.ins-page-title-txt h1{font-size:40px;line-height:50px;letter-spacing:1px;color:#fff;}
+	@media (max-width: 1000px){
+	.ins-page-title-inner{margin-top:0!important;}
+	}
+	.no-margin{margin:0!important;}
+	.padding-5px-tb{padding-top:5px;padding-bottom:5px;}
+	@media screen and (max-width:768px){
+	h1{line-height:42px!important;font-size:30px!important;}
+	}
+	}
+	/*! CSS Used from: Embedded */
+	.ins-breadcrumbs a,.ins-breadcrumbs i,.ins-breadcrumbs .current{color:#ffffff!important;}
+	/*! CSS Used from: Embedded */
+	a{color:#223645;}
+	a:hover{color:#778cc6;}
+	h1{font-family:Cabin;line-height:50px;letter-spacing:1px;font-weight:700;font-style:normal;color:#223645;font-size:40px;font-display:swap;}
+	h1{text-decoration: none !important;}
+	.ins-page-title-wrapper .ins-page-title-bg{background-repeat:no-repeat;background-position:center top;background-size:cover;}
+	#ins-page-title{background-color:#f8f8f8;}
+	.ins-page-title-txt>h1{font-family:Cabin;line-height:50px;letter-spacing:1px;font-weight:700;font-style:normal;font-size:40px;font-display:swap;}
+	.ins-page-title-txt>h1,.ins-breadcrumbs a,.ins-breadcrumbs,.ins-breadcrumbs i,.ins-breadcrumbs .current{color:#ffffff;}
+	/*! CSS Used fontfaces */
+	@font-face{font-family:'FontAwesome';src:url('https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/fonts/fontawesome-webfont.eot?v=4.1.0');src:url('https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/fonts/fontawesome-webfont.eot#iefix&v=4.1.0') format('embedded-opentype'),url('https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'),url('https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'),url('https://molaprise.com/wp-content/plugins/spoontalk-social-media-icons-widget/inc/css/font-awesome-4.0.3/fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+	@font-face{font-family:FontAwesome;src:url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0);src:url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.eot#iefix&v=4.7.0) format('embedded-opentype'),url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0) format('woff2'),url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0) format('woff'),url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0) format('truetype'),url(https://molaprise.com/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular) format('svg');font-weight:400;font-style:normal;}
+	@font-face{font-family:'FontAwesome';src:url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.eot?v=4.7.0');src:url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.eot#iefix&v=4.7.0') format('embedded-opentype'),url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),url('https://molaprise.com/wp-content/plugins/wp-carousel-free/public/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');font-weight:normal;font-style:normal;}
+	@font-face{font-family:Cabin;src:url('https://molaprise.com/wp-content/themes/innvoke/assets/fonts/Cabin-Regular.ttf');}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnhHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OngHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnuHXisAZFx.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnhHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OngHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnuHXisAZFx.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnhHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OngHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnuHXisAZFx.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnhHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OngHXisAZFxqZQ.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:italic;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4g0qWljRw-Pd815fNqc8T_wAFcX-c37OnuHXisAZFx.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvptnsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6Xvp9nsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:400;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvqdnsF3-OAw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvptnsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6Xvp9nsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:500;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvqdnsF3-OAw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvptnsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6Xvp9nsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:600;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvqdnsF3-OAw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvptnsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6Xvp9nsF3-OA6Fw.woff2) format('woff2');unicode-range:U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;}
+	@font-face{font-family:'Cabin';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/cabin/v18/u-4i0qWljRw-PfU81xCKCpdpbgZJl6XvqdnsF3-OAw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;}
